@@ -1,0 +1,126 @@
+@import "./typography.less";
+@import "./color-scheme.less";
+
+//depoimentos
+#depoimentos.bs-slider {
+  .carousel-inner {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .carousel-item {
+      height: auto;
+      width: 100%;
+      padding: 85px 0;
+      .captions {
+        color: darken(@gray, 15%);
+        h4 {
+          color: #d2527f;
+          span {
+            color: darken(@gray, 15%);
+          }
+        }
+        p {
+          margin: 35px 0;
+        }
+        b {
+          color: @dark;
+        }
+      }
+    }
+  }
+
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+  .carousel-control-prev-icon {
+    background-image: none;
+  }
+  .carousel-control-next {
+    color: @gray;
+    font-size: 35px;
+  }
+  .carousel-control-prev {
+    color: @gray;
+    font-size: 35px;
+  }
+}
+
+//planos
+.planos {
+  #carroussel-container {
+    width: 100%;
+    .captions {
+      width: 100%;
+      .plano-container {
+        width: 45%;
+        margin: auto;
+      }
+    }
+  }
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+  .carousel-control-prev-icon {
+    background-image: none;
+  }
+  .carousel-control-next {
+    color: @gray;
+    font-size: 35px;
+  }
+  .carousel-control-prev {
+    color: @gray;
+    font-size: 35px;
+  }
+  .mobile {
+    .accordion {
+      .btn-accordion {
+        width: 50%;
+        margin: auto;
+        display: block;
+        color: #fff !important;
+        margin-top: 0px;
+        border-left: 0px !important;
+        border-color: @dark;
+        &:hover {
+          background-color: gray !important;
+        }
+      }
+      .valor-container {
+        background-color: darken(@info, 15%) !important;
+        padding: 15px 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1px) and (max-width: 576px) {
+  .planos {
+    .desk {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .planos {
+    .desk {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .planos {
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 993px) {
+  .planos {
+    .mobile {
+      display: none;
+    }
+  }
+}

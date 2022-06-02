@@ -1,0 +1,190 @@
+#nosso-metodo {
+  .box-bg {
+    padding: 25px 45px !important;
+  }
+  .content {
+    text-align: left !important;
+  }
+}
+
+#faq-form {
+  .box-bg {
+    padding: 25px 45px !important;
+  }
+}
+
+#servicos{
+    background-image: linear-gradient(@light, @secondary);
+    border-bottom: 1px solid @primary;
+}
+
+.whatsapp{
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  #bt-whats{
+   .p-relative;
+   width: 100%;
+   height: 100%;
+   font-size: 76px;
+   opacity: 1;
+   transition: all 0.4s;    
+   a{
+     .vh-center;
+     color: green;
+   }
+   &:hover{
+    opacity: 0.5;
+  }
+  }
+}
+
+
+/****************************************************************/
+/************************* MEDIA QUERIES ************************/
+/****************************************************************/
+@media (min-width: 1px) and (max-width: 576px) {
+  #nosso-metodo {
+    .content {
+      margin-top: 50px;
+    }
+  }
+
+  #conheca {
+    .box-bg-pedras {
+      margin-bottom: 75px;
+    }
+  }
+
+  .col-antes-depois{
+    .box-bg{
+      width: 100% !important;
+      margin-top: 35px;
+    }
+  }
+
+  // seção smare
+  .s-mobile {
+    display: block;
+  }
+  .s-desk {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #nosso-metodo {
+    .content {
+      margin-top: 50px;
+    }
+  }
+
+  #conheca {
+    .box-bg-pedras {
+      margin-bottom: 75px;
+    }
+  }
+
+  .col-antes-depois{
+    .box-bg{
+      width: 100% !important;
+      margin-top: 35px;
+    }
+  }
+
+  // seção smare
+  .s-mobile {
+    display: none;
+  }
+  .s-desk {
+    display: block;
+    h3{
+        .xx-small;
+    }
+    p{
+        .xx-small;
+    }
+  
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #nosso-metodo {
+    .content {
+      margin-top: 50px;
+    }
+  }
+
+  #conheca {
+    .box-bg-pedras {
+      margin-bottom: 75px;
+    }
+  }
+
+  .col-antes-depois{
+    .box-bg{
+      width: 100% !important;
+      margin-top: 35px;
+    }
+  }
+  
+  // seção smare
+  .s-mobile {
+    display: none;
+  }
+  .s-desk {
+    display: block;
+    h3{
+        .small;
+    }
+    p{
+        .xx-small;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #nosso-metodo {
+    .content {
+      .v-center;
+    }
+  }
+  
+  // seção smare
+  .s-mobile {
+    display: none;
+  }
+  .s-desk {
+    display: block;
+    h3{
+        .medium;
+    }
+    p{
+        .small;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #nosso-metodo {
+    .content {
+      .v-center;
+    }
+  }
+  
+  // seção smare
+  .s-mobile {
+    display: none;
+  }
+  .s-desk {
+    display: block;
+    h3{
+        .medium;
+    }
+    p{
+        .small;
+    }
+  }
+}

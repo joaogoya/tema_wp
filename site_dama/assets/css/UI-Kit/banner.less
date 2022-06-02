@@ -1,0 +1,78 @@
+@import './typography.less';
+@import './color-scheme.less';
+
+#inicio{
+    position: relative;
+    .container{
+        z-index: 2;
+        color: @light;
+        padding: 0px;
+        top: 66%;
+        .col-12{
+            padding: 0px;
+        }
+        div div:first-child{
+            p{
+                line-height: 1.2em;
+            }            
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 576px){
+    #inicio .container{
+        top: 50%;
+        p{
+            font-size: 12px !important;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px #000;
+        }
+        .btn{
+            font-size: 10px !important;
+            font-weight: 200;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    #inicio .container{
+        top: 50%;
+        p{
+            font-size: 17px !important;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    #inicio .container{
+        top: 50%;
+        p{
+            font-size: 25px !important;
+        }
+    }
+}
+
+@media (min-width:  993px) and (max-width: 1200px){
+    #inicio .container{
+        top: 50%;
+        p{
+            font-size: 25px !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+    #inicio .container{
+        top: 50%;
+        p{
+            font-size: 25px !important;
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+    #inicio .container{
+        top: 50%;
+    }
+}

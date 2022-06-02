@@ -1,0 +1,169 @@
+@import 'color-scheme.less';
+@import 'typography.less';
+
+.navbar{
+    line-height: 45px !important;
+    z-index: 25;
+    padding: 0px !important;
+    border-bottom: 2px solid lighten(@primary, 15%);
+    .container-fluid{
+        padding: 0px;
+    }
+    &.fixed-top{
+        background-color: @light;
+        z-index: 15;
+        height: auto;
+        .nav-link{
+            font-size: 0.9em;
+            float: left;
+        }
+    }
+
+    .navbar-brand .nav-fixed{
+        max-width: 180px;
+    }
+
+    //bt hamburger
+    .navbar-toggler{
+        border: 2px solid @dark;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    //ul - menu propriamente dito
+    .navbar-nav{
+        float: left;
+        .nav-item{
+            .p-relative;
+            border-bottom: 5px solid @light;
+            &:hover{
+                background-color: @light;
+                border-bottom: 5px solid @primary;
+            }
+        }
+        .nav-link{
+            color: @dark;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            .small;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+    }
+    
+    // bt que abre o dropdown qd tem meunu dropdown
+    .dropdown-toggle::after{
+        content: none;
+    }
+    .dropdown-menu{
+        border-color: lighten(@primary, 25%);
+        padding-left: 15px;
+    }
+
+    // segunda coluna
+    .column-2{
+        flex-flow: wrap;
+        flex-direction: row;
+        .m-column{
+            width: 100%;
+           ul{
+               width: 100%;
+           }
+        }
+    }
+}
+
+/****************************************************************/
+/************************* MEDIA QUERIES ************************/
+/****************************************************************/
+@media (min-width: 1px) and (max-width: 576px){
+    .navbar{
+        .brand-container{
+            width: 100%;
+            .nav-item{
+                text-align: right;
+            }
+            .navbar-toggler{
+                float: right;
+            }
+        }
+        .column-2{
+            padding-left: 25px;
+            .top-bar-container-desk{
+                display: none;
+            }
+        }
+        .navbar-collapse{
+            background-color: @light;
+            .nav-item{
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .brand-container{
+        width: 100%;
+        .navbar-toggler{
+            float: right;
+        }
+    }
+    .column-2{
+        padding-left: 25px;
+        .top-bar-container-desk{
+            display: none;
+        }
+    }
+    .navbar-collapse{
+        background-color: @light;
+        .nav-item{
+            text-align: center;
+        }
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .brand-container{
+        width: 100%;
+        .navbar-toggler{
+            float: right;
+        }
+    }
+    .column-2{
+        padding-left: 25px;
+        .top-bar-container-desk{
+            display: none;
+        }
+    }
+    .navbar-collapse{
+        background-color: @light;
+        .nav-item{
+            text-align: center;
+        }
+    }
+}
+
+
+
+@media (min-width:  993px) and (max-width: 1200px){
+    .brand-container{
+        width: 100%;
+        .navbar-toggler{
+            float: right;
+        }
+    }
+    .column-2{
+        padding-left: 25px;
+        .top-bar-container-desk{
+            display: none;
+        }
+    }
+
+}
+
+@media (min-width: 1200px){
+
+}

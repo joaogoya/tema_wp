@@ -1,0 +1,236 @@
+.aspect-ratio {
+  width: 100%;
+  padding-top: 80%;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  background-size: 180% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.lg-total {
+  width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 3px solid @primary;
+}
+
+.bg-fit {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+/*
+    backgrounds das sections
+*/
+
+//src e tamanha
+.section-bg {
+  min-height: 400px;
+  background-color: @secondary;
+  background-repeat: no-repeat;
+}
+
+.folhas-topo {
+  background-image: url("./../../../site_dama/assets/img/folhas-topo.png");
+}
+
+.folhas-base {
+  background-image: url("./../../../site_dama/assets/img/folhas-base.png");
+}
+
+.bambu-pedras {
+  background-image: url("./../../../site_dama/assets/img/bambu-pedras.png");
+}
+
+.toalha-garrafa {
+  background-image: url("./../../../site_dama/assets/img/toalha-garrafa.png");
+}
+
+//posicao - ainda bg sections
+.top-right {
+  background-position: top right;
+}
+
+.top-left {
+  background-position: bottom right;
+}
+
+.bottom-right {
+  background-position: bottom right;
+}
+
+.bottom-left {
+  background-position: bottom left;
+}
+
+/*
+    background dos boxes
+*/
+.box-bg {
+  background-color: @light;
+  .block-box-shadow;
+  .p-relative;
+  padding: 10px;
+  img{
+    .lg-total;
+  }
+}
+
+.box-bg-big {
+  &:after {
+    content: "";
+    .v-center;
+    display: inline-block;
+    width: 50%;
+    height: 79%;
+    left: -50%;
+    background: url("./../../../site_dama/assets/img/box-bg-big.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+.box-bg-small {
+  width: 75%;
+  &:after {
+    content: "";
+    .v-center;
+    display: inline-block;
+    width: 50%;
+    height: 49%;
+    right: -50%;
+    background: url("./../../../site_dama/assets/img/box-bg-small.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+}
+
+.box-bg-pedras {
+  width: 75%;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -77px;
+    left: 86px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    right: -50%;
+    background: url("./../../../site_dama/assets/img/pedras-e-flor.png");
+    background-size: 100% auto !important;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.card{
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/****************************************************************/
+/************************* MEDIA QUERIES ************************/
+/****************************************************************/
+@media (min-width: 1px) and (max-width: 576px) {
+  .folhas-topo {
+    background-image: none;
+  }
+
+  .folhas-base {
+    background-image: none;
+  }
+
+  .bambu-pedras {
+    background-image: none;
+  }
+
+  .toalha-garrafa {
+    background-image: none;
+  }
+
+  .box-bg-big {
+    &:after {
+      display: none !important;
+    }
+  }
+  .box-bg-small {
+    &:after {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .folhas-topo {
+    background-image: none;
+  }
+
+  .folhas-base {
+    background-image: none;
+  }
+
+  .bambu-pedras {
+    background-image: none;
+  }
+
+  .toalha-garrafa {
+    background-image: none;
+  }
+
+  .box-bg-bigg {
+    &:after {
+      display: none !important;
+    }
+  }
+  .box-bg-small {
+    &:after {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .folhas-topo {
+    background-image: none;
+  }
+
+  .folhas-base {
+    background-image: none;
+  }
+
+  .bambu-pedras {
+    background-image: none;
+  }
+
+  .toalha-garrafa {
+    background-image: none;
+  }
+
+  .box-bg-big {
+    &:after {
+      display: none !important;
+    }
+  }
+  .box-bg-small {
+    &:after {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
+}

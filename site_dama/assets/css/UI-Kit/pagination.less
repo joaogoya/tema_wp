@@ -1,0 +1,48 @@
+@import 'color-scheme.less';
+
+.pagination-container{
+    text-align: center;
+    margin: 50px 0 40px 0;
+    .nav-links{
+        width: 100%;
+    }
+    .page-numbers{
+        padding: 5px 15px;
+        font-size: 1em;
+        color: @primary;
+        font-weight: 600;
+        border-radius: 6px;
+        &:hover{
+            background: @primary;
+            color: @light;
+            text-decoration: none;
+        }
+    }
+    .current{
+        background: @primary;
+        color: @light;
+        text-decoration: none;
+    }
+    .prev:hover, .next:hover{
+        color: @primary;
+        background-color: @light;
+        text-decoration: underline;
+    }
+}
+
+
+@media (min-width: 1px) and (max-width: 576px){
+    .pagination-container{
+        .page-numbers{
+            padding: 1px 8px;;
+        }
+    }    
+}
+
+@media (min-width: 576px) and (max-width: 768px){}
+
+@media (min-width: 769px) and (max-width: 992px){}
+
+@media (min-width: 993px){}
+
+

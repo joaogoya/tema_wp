@@ -1,0 +1,148 @@
+
+
+// smooth scrool
+:target:not(#inicio) {
+    display: block;
+    position: relative; 
+    padding-top: 135px !important;
+}
+
+
+section:not(:first-child) {
+    padding: 50px 0;
+}
+
+.v-center{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+
+.h-center{
+position: absolute;
+left: 50%;
+-ms-transform: translate(-50%, 0);
+transform: translate(-50%, 0);
+}
+
+.vh-center{
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+}
+
+.circle{
+  border-radius: 50%;
+}
+
+.m-1{
+    margin: 20px !important;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.p-0{
+  padding: 0;
+}
+
+.p-10{
+  padding: 10px !important;
+}
+
+.p-20{
+  padding: 20px !important;
+}
+
+.p-30{
+  padding: 30px !important;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.mg-auto{
+  margin: auto;
+}
+
+.responsive-map{
+  position: relative;
+  padding-bottom: 560px; /* 4:3 ratio*/
+  height: 0;
+  overflow: hidden;
+  iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+  }
+}
+
+.block-box-shadow{
+  box-shadow: 1px 5px 14px #eee;
+}
+
+.lg-total{
+  max-width: 100%;
+  height: auto;
+}
+
+.desk{}
+
+
+.modal-dialog{
+  width: 80%;
+  margin: auto;
+}
+
+/****************************************************************/
+/************************* MEDIA QUERIES ************************/
+/****************************************************************/
+@media (min-width: 1px) and (max-width: 576px){
+  .desk{ display: none !important; }
+  .mobile{ display: block !important; }
+
+  .order-invert {
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .desk{ display: none !important; }
+  .mobile{ display: block !important; }
+
+  .order-invert {
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+  .desk{ display: none !important; }
+  .mobile{ display: block !important; }
+
+  .order-invert {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width:  993px) and (max-width: 1200px){
+  .desk{ display: none !important; }
+  .mobile{ display: block !important; }
+}
+
+@media (min-width:  1200px) {
+  .desk{ display: block !important; }
+  .mobile{ display: none !important; }
+}

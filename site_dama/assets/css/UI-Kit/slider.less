@@ -1,0 +1,235 @@
+//Banner home
+#slider-home {
+  .carousel-item {
+    height: auto;
+    .slider-bg {
+        .h-center;
+    }
+    .carousel-caption {
+      bottom: unset;
+      text-align: left;
+      .v-center;
+      .caption-content {
+        width: 35%;
+        img {
+          max-width: 50% !important;
+          width: 50% !important;
+          height: auto !important;
+        }
+      }
+    }
+  }
+}
+
+//depoimentos
+.transition-indicators {
+  transition: all 0.65s ease;
+}
+
+#slider-depos {
+  .carousel-item {
+    .carousel-caption {
+      position: unset !important;
+      .indicators-height {
+        height: 270px;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    .depos-indicators {
+      text-indent: 0;
+      margin: 0 2px;
+      width: 150px;
+      height: 250px;
+      color: @dark;
+      background-color: @secondary;
+      .transition-indicators;
+
+      .depo-pointer {
+        width: 0px;
+        height: auto;
+        .transition-indicators;
+      }
+
+      .depo-avatar {
+        width: 50%;
+        height: auto;
+        .circle;
+        .transition-indicators;
+      }
+
+      .depo-text {
+        height: 0px;
+        overflow: hidden;
+        .transition-indicators;
+      }
+
+      &.active,
+      &:hover {
+        margin: 0 2px;
+        opacity: 1;
+
+        .depo-pointer {
+          width: 80%;
+          height: auto;
+        }
+
+        .depo-avatar {
+          width: 70%;
+        }
+
+        .depo-text {
+          height: 105px;
+
+          .depo-name {
+            .playfair;
+            font-weight: 800;
+            font-style: italic;
+          }
+
+          .depo-position {
+            color: @primary;
+            .xx-small;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+  }
+
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 55px;
+    color: @primary;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 55px;
+    color: @primary;
+  }
+}
+
+/****************************************************************/
+/************************* MEDIA QUERIES ************************/
+/****************************************************************/
+@media (min-width: 1px) and (max-width: 576px) {
+  #slider-home {
+    .carousel-item {
+      height: auto;
+      .slider-bg {
+        .h-center;
+      }
+      .carousel-caption {
+        .caption-content {
+          width: 85%;
+        }
+      }
+    }
+  }
+
+  #slider-depos {
+    .carousel-item {
+      .carousel-caption {
+        p {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #slider-home {
+    .carousel-item {
+      height: auto;
+      .slider-bg {
+        .h-center;
+      }
+      .carousel-caption {
+        .caption-content {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  #slider-depos {
+    .carousel-item {
+      .carousel-caption {
+        p {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #slider-home {
+    .carousel-item {
+      height: auto;
+      .slider-bg {
+        .h-center;
+      }
+      .carousel-caption {
+        .caption-content {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  #slider-depos {
+    .carousel-item {
+      .carousel-caption {
+        p {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #slider-home {
+    .caption-content {
+      width: 45%;
+    }
+    height: auto;
+    .slider-bg {
+      .h-center;
+    }
+    
+
+  }
+
+  #slider-depos {
+    .carousel-item {
+      .carousel-caption {
+        p {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #slider-home {
+    
+    
+  }
+
+  
+}
