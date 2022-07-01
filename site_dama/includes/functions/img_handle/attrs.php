@@ -32,6 +32,24 @@
             String de classes do html. O atributo class=""
     */
 
+        /*
+        Exemplo de utilização
+        
+            ao invés de escrever:
+                <img src="endereco/da/imagem.jpg" class="w-100 nome-de-outra-class" alt="textto alternativo" />
+                ou
+                the_post_thumbnail();
+
+            escreva:
+                se for uma thumb
+                    echo pipe_get_img($post-ID, true, 'medium', 'w-100 nome-de-outra-class');
+
+                se for acf
+                    echo pipe_get_img($id_imagem, false, 'medium', 'w-100 nome-de-outra-class');
+
+            A função retorna a tag img escrita.            
+    */
+
 
 function pipe_get_img($id, $is_thumb, $size_to_serve, $class)
 {
